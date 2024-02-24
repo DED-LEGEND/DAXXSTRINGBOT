@@ -37,21 +37,21 @@ import config
 ask_ques = "**» ▷ 𝖢𝐡𝐨𝐨𝐬𝐞 𝖳𝐡𝐞 𝖲𝐭𝐫𝐢𝐧𝐠 𝖶𝐡𝐢𝐜𝐡 𝖸𝐨𝐮 𝖶𝐚𝐧𝐭 ✔️ : :**"
 buttons_ques = [
     [
-        InlineKeyboardButton("𝖯𝖸𝖱𝖮𝖦𝖱𝖠𝖬", callback_data="pyrogram1"),
-        InlineKeyboardButton("𝖯𝖸𝖱𝖮𝖦𝖱𝖠𝖬 𝖵2", callback_data="pyrogram"),
+        InlineKeyboardButton("💗𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌💗", callback_data="pyrogram1"),
+        InlineKeyboardButton("💖𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌 𝐕𝟐💖", callback_data="pyrogram"),
     ],
     [
-        InlineKeyboardButton("𝖳𝖤𝖫𝖤𝖳𝖧𝖮𝖭", callback_data="telethon"),
+        InlineKeyboardButton("❤𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍❤", callback_data="telethon"),
     ],
     [
-        InlineKeyboardButton("𝖯𝖸𝖱𝖮𝖦𝖱𝖠𝖬 𝖡𝖮𝖳", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("𝖳𝖤𝖫𝖤𝖳𝖧𝖮𝖭 𝖡𝖮𝖳", callback_data="telethon_bot"),
+        InlineKeyboardButton("💘𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌 𝐁𝐎𝐓💘", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("💌𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 𝐁𝐎𝐓💌", callback_data="telethon_bot"),
     ],
 ]
 
 gen_button = [
     [
-        InlineKeyboardButton(text=" 𝖦𝖤𝖭𝖤𝖱𝖠𝖳𝖤 𝖲𝖳𝖱𝖨𝖭𝖦 ", callback_data="generate")
+        InlineKeyboardButton(text="💟𝐃𝐗 𝐋𝐔𝐂𝐊𝐘 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐒𝐓𝐑𝐈𝐍𝐆💟", callback_data="generate")
     ]
 ]
 
@@ -72,7 +72,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
             ty += " 𝖵2"
     if is_bot:
         ty += " 𝖡𝖮𝖳"
-    await msg.reply(f"» 𝖳𝖱𝖸𝖨𝖭𝖦 𝖳𝖮 𝖲𝖳𝖠𝖱𝖳 **{ty}** 𝖲𝖤𝖲𝖲𝖨𝖮𝖭 𝖦𝖤𝖭𝖤𝖱𝖠𝖳𝖮𝖱...")
+    await msg.reply(f"» 𝖳𝖱𝖸𝖨𝖭𝖦 𝖳𝖮 𝖲𝖳𝖠𝖱𝖳 **{ty}** 💟𝐃𝐗 𝐋𝐔𝐂𝐊𝐘 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐒𝐓𝐑𝐈𝐍𝐆💟...")
     user_id = msg.chat.id
     api_id_msg = await bot.ask(user_id, "𝖯𝖫𝖤𝖠𝖲𝖤 𝖲𝖤𝖭𝖣 𝖸𝖮𝖴 **𝖠𝖯𝖨_𝖨𝖣** 𝖳𝖮 𝖯𝖱𝖮𝖢𝖤𝖤𝖣.\n\n𝖢𝖫𝖨𝖢𝖪 𝖮𝖭 /skip 𝖥𝖮𝖱 𝖴𝖲𝖨𝖭𝖦 𝖡𝖮𝖳 𝖠𝖯𝖨.", filters=filters.text)
     if await cancelled(api_id_msg):
@@ -174,7 +174,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"**𝖳𝐡𝐢𝐬 𝖨𝐬 𝖸𝐨𝐮𝐫 {ty} 𝖲𝐭𝐫𝐢𝐧𝐠 𝖲𝐞𝐬𝐬𝐢𝐨𝐧** \n\n`{string_session}` \n\n**𝖦𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝖡𝐲 :** @IAM_DAXX\n🍒 **𝖭𝖮𝖳𝖤 :** 𝖣𝐨𝐧𝐭 𝖲𝐡𝐚𝐫𝐞 𝖶𝐢𝐭𝐡 𝖠𝐧𝐲𝐨𝐧𝐞 𝖡𝐞𝐜𝐚𝐮𝐬𝐞 𝖧𝐞 𝖢𝐚𝐧 𝖧𝐚𝐜𝐤 𝖸𝐨𝐮𝐫 𝖠𝐥𝐥 𝖣𝐚𝐭𝐚. 🍑 𝖠𝐧𝐝 𝖣𝐨𝐧𝐭 𝖥𝐨𝐫𝐠𝐞𝐭 𝖳𝐨 𝖩𝐨𝐢𝐧 @ALLTYPECC & @ALLTYPECC 🥺"
+    text = f"**𝖳𝐡𝐢𝐬 𝖨𝐬 𝖸𝐨𝐮𝐫 {ty} 𝖲𝐭𝐫𝐢𝐧𝐠 𝖲𝐞𝐬𝐬𝐢𝐨𝐧** \n\n`{string_session}` \n\n**𝖦𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝖡𝐲 :** @DX_LUCKY\n🍒 **𝖭𝖮𝖳𝖤 :** 𝖣𝐨𝐧𝐭 𝖲𝐡𝐚𝐫𝐞 𝖶𝐢𝐭𝐡 𝖠𝐧𝐲𝐨𝐧𝐞 𝖡𝐞𝐜𝐚𝐮𝐬𝐞 𝖧𝐞 𝖢𝐚𝐧 𝖧𝐚𝐜𝐤 𝖸𝐨𝐮𝐫 𝖠𝐥𝐥 𝖣𝐚𝐭𝐚. 🍑 𝖠𝐧𝐝 𝖣𝐨𝐧𝐭 𝖥𝐨𝐫𝐠𝐞𝐭 𝖳𝐨 𝖩𝐨𝐢𝐧 @YARANA_TG & @Dx_STRING_BOT 🥺"
     try:
         if not is_bot:
             await client.send_message("me", text)
@@ -183,7 +183,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     except KeyError:
         pass
     await client.disconnect()
-    await bot.send_message(msg.chat.id, "» 𝖲𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝖦𝐫𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝖸𝐨𝐮 {} 𝖲𝐭𝐫𝐢𝐧𝐠 𝖲𝐞𝐬𝐬𝐢𝐨𝐧.\n\n𝖯𝐥𝐞𝐚𝐬𝐞 𝖢𝐡𝐞𝐜𝐤 𝖸𝐨𝐮𝐫 𝖲𝐚𝐯𝐞𝐝 𝖬𝐞𝐬𝐬𝐚𝐠𝐞 𝖳𝐨 𝖦𝐞𝐭 𝖨𝐭 ! \n\n𝖠 𝖲𝐭𝐫𝐢𝐧𝐠  𝖦𝐞𝐧𝐞𝐫𝐚𝐭𝐨𝐫 𝖡𝐨𝐭 𝖡𝐲 @ALLTYPECC ♦".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴩʏʀᴏɢʀᴀᴍ"))
+    await bot.send_message(msg.chat.id, "» 𝖲𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝖦𝐫𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝖸𝐨𝐮 {} 𝖲𝐭𝐫𝐢𝐧𝐠 𝖲𝐞𝐬𝐬𝐢𝐨𝐧.\n\n𝖯𝐥𝐞𝐚𝐬𝐞 𝖢𝐡𝐞𝐜𝐤 𝖸𝐨𝐮𝐫 𝖲𝐚𝐯𝐞𝐝 𝖬𝐞𝐬𝐬𝐚𝐠𝐞 𝖳𝐨 𝖦𝐞𝐭 𝖨𝐭 ! \n\n𝖠 𝖲𝐭𝐫𝐢𝐧𝐠  𝖦𝐞𝐧𝐞𝐫𝐚𝐭𝐨𝐫 𝖡𝐨𝐭 𝖡𝐲 @Dx_STRING_BOT @YARANA_TG ♦".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴩʏʀᴏɢʀᴀᴍ"))
 
 
 async def cancelled(msg):
